@@ -1,0 +1,34 @@
+# 忽略编译生成的文件
+*.o
+*.out
+*.d
+*.cmd
+*.map
+*.xml
+*.ccxml
+
+# 忽略 Clang 缓存文件
+.clangd/
+.clangd/*.idx
+.clangd/compile_commands.json
+
+# 忽略其他生成文件
+Debug/
+Event.dot
+ccsObjs.opt
+device.cmd.genlibs
+device.opt
+device_linker.cmd
+empty.d
+empty.o
+empty_LP_MSPM0G3507_nortos_ticlang.map
+empty_LP_MSPM0G3507_nortos_ticlang.out
+empty_LP_MSPM0G3507_nortos_ticlang_linkInfo.xml
+makefile
+objects.mk
+sources.mk
+startup_mspm0g350x_ticlang.d
+startup_mspm0g350x_ticlang.o
+subdir_rules.mk
+subdir_vars.mk
+targetConfigs/
