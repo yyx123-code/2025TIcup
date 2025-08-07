@@ -13,7 +13,10 @@ ORDERED_OBJS += \
 "./empty.o" \
 "./ti_msp_dl_config.o" \
 "./startup_mspm0g350x_ticlang.o" \
+"./targetConfigs/User/encoder.o" \
+"./targetConfigs/User/key.o" \
 "./targetConfigs/User/motor.o" \
+"./targetConfigs/User/pid.o" \
 "./targetConfigs/User/track.o" \
 $(GEN_CMDS__FLAG) \
 -Wl,-ldevice.cmd.genlibs \
@@ -140,15 +143,15 @@ all: $(OBJS) $(GEN_CMDS)
 empty_LP_MSPM0G3507_nortos_ticlang.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: Arm Linker'
-	"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"empty_LP_MSPM0G3507_nortos_ticlang.map" -Wl,-i"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source" -Wl,-i"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang" -Wl,-i"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/Debug/syscfg" -Wl,-i"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="empty_LP_MSPM0G3507_nortos_ticlang_linkInfo.xml" -Wl,--rom_model -o "empty_LP_MSPM0G3507_nortos_ticlang.out" $(ORDERED_OBJS)
+	"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -gdwarf-3 -Wl,-m"empty_LP_MSPM0G3507_nortos_ticlang.map" -Wl,-i"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source" -Wl,-i"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang" -Wl,-i"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/Debug/syscfg" -Wl,-i"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/lib" -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="empty_LP_MSPM0G3507_nortos_ticlang_linkInfo.xml" -Wl,--rom_model -o "empty_LP_MSPM0G3507_nortos_ticlang.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" "targetConfigs\User\motor.o" "targetConfigs\User\track.o" 
-	-$(RM) "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" "targetConfigs\User\motor.d" "targetConfigs\User\track.d" 
+	-$(RM) "empty.o" "ti_msp_dl_config.o" "startup_mspm0g350x_ticlang.o" "targetConfigs\User\encoder.o" "targetConfigs\User\key.o" "targetConfigs\User\motor.o" "targetConfigs\User\pid.o" "targetConfigs\User\track.o" 
+	-$(RM) "empty.d" "ti_msp_dl_config.d" "startup_mspm0g350x_ticlang.d" "targetConfigs\User\encoder.d" "targetConfigs\User\key.d" "targetConfigs\User\motor.d" "targetConfigs\User\pid.d" "targetConfigs\User\track.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

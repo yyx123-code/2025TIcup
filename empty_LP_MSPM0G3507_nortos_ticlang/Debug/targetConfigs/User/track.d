@@ -76,6 +76,7 @@ targetConfigs/User/track.o: ../targetConfigs/User/track.c \
  E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/dl_wwdt.h \
  E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/m0p/dl_interrupt.h \
  E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/m0p/dl_systick.h \
+ ../targetConfigs/User/pid.h ../targetConfigs/User/encoder.h \
  ../targetConfigs/User/motor.h
 ../targetConfigs/User/track.h:
 ti_msp_dl_config.h:
@@ -152,4 +153,6 @@ E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/dl_vref.h:
 E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/dl_wwdt.h:
 E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/m0p/dl_interrupt.h:
 E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/m0p/dl_systick.h:
+../targetConfigs/User/pid.h:
+../targetConfigs/User/encoder.h:
 ../targetConfigs/User/motor.h:

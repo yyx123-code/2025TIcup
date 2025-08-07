@@ -75,8 +75,11 @@ empty.o: ../empty.c \
  E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/dl_wwdt.h \
  E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/m0p/dl_interrupt.h \
  E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/m0p/dl_systick.h \
- C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/motor.h \
- C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/track.h
+ C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/motor.h \
+ C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/track.h \
+ C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/pid.h \
+ C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/encoder.h \
+ C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/key.h
 ti_msp_dl_config.h:
 E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/devices/msp/msp.h:
 E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/devices/DeviceFamily.h:
@@ -151,5 +154,8 @@ E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/dl_vref.h:
 E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/dl_wwdt.h:
 E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/m0p/dl_interrupt.h:
 E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/driverlib/m0p/dl_systick.h:
-C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/motor.h:
-C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/track.h:
+C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/motor.h:
+C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/track.h:
+C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/pid.h:
+C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/encoder.h:
+C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User/key.h:

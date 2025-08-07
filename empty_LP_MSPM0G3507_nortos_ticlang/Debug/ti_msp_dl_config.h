@@ -78,35 +78,75 @@ extern "C" {
 
 
 /* Defines for PWM_MOTOR */
-#define PWM_MOTOR_INST                                                     TIMG6
-#define PWM_MOTOR_INST_IRQHandler                               TIMG6_IRQHandler
-#define PWM_MOTOR_INST_INT_IRQN                                 (TIMG6_INT_IRQn)
-#define PWM_MOTOR_INST_CLK_FREQ                                          4000000
+#define PWM_MOTOR_INST                                                     TIMG8
+#define PWM_MOTOR_INST_IRQHandler                               TIMG8_IRQHandler
+#define PWM_MOTOR_INST_INT_IRQN                                 (TIMG8_INT_IRQn)
+#define PWM_MOTOR_INST_CLK_FREQ                                         32000000
 /* GPIO defines for channel 0 */
 #define GPIO_PWM_MOTOR_C0_PORT                                             GPIOB
 #define GPIO_PWM_MOTOR_C0_PIN                                      DL_GPIO_PIN_6
 #define GPIO_PWM_MOTOR_C0_IOMUX                                  (IOMUX_PINCM23)
-#define GPIO_PWM_MOTOR_C0_IOMUX_FUNC                 IOMUX_PINCM23_PF_TIMG6_CCP0
+#define GPIO_PWM_MOTOR_C0_IOMUX_FUNC                 IOMUX_PINCM23_PF_TIMG8_CCP0
 #define GPIO_PWM_MOTOR_C0_IDX                                DL_TIMER_CC_0_INDEX
 /* GPIO defines for channel 1 */
 #define GPIO_PWM_MOTOR_C1_PORT                                             GPIOB
 #define GPIO_PWM_MOTOR_C1_PIN                                      DL_GPIO_PIN_7
 #define GPIO_PWM_MOTOR_C1_IOMUX                                  (IOMUX_PINCM24)
-#define GPIO_PWM_MOTOR_C1_IOMUX_FUNC                 IOMUX_PINCM24_PF_TIMG6_CCP1
+#define GPIO_PWM_MOTOR_C1_IOMUX_FUNC                 IOMUX_PINCM24_PF_TIMG8_CCP1
 #define GPIO_PWM_MOTOR_C1_IDX                                DL_TIMER_CC_1_INDEX
 
 
 
+/* Defines for EncoderRA */
+#define EncoderRA_INST                                                   (TIMA0)
+#define EncoderRA_INST_IRQHandler                               TIMA0_IRQHandler
+#define EncoderRA_INST_INT_IRQN                                 (TIMA0_INT_IRQn)
+#define EncoderRA_INST_LOAD_VALUE                                       (31999U)
+/* GPIO defines for channel 0 */
+#define GPIO_EncoderRA_C0_PORT                                             GPIOB
+#define GPIO_EncoderRA_C0_PIN                                      DL_GPIO_PIN_8
+#define GPIO_EncoderRA_C0_IOMUX                                  (IOMUX_PINCM25)
+#define GPIO_EncoderRA_C0_IOMUX_FUNC                 IOMUX_PINCM25_PF_TIMA0_CCP0
 
+/* Defines for EncoderLA */
+#define EncoderLA_INST                                                   (TIMG6)
+#define EncoderLA_INST_IRQHandler                               TIMG6_IRQHandler
+#define EncoderLA_INST_INT_IRQN                                 (TIMG6_INT_IRQn)
+#define EncoderLA_INST_LOAD_VALUE                                       (31999U)
+/* GPIO defines for channel 1 */
+#define GPIO_EncoderLA_C1_PORT                                             GPIOB
+#define GPIO_EncoderLA_C1_PIN                                     DL_GPIO_PIN_27
+#define GPIO_EncoderLA_C1_IOMUX                                  (IOMUX_PINCM58)
+#define GPIO_EncoderLA_C1_IOMUX_FUNC                 IOMUX_PINCM58_PF_TIMG6_CCP1
+
+
+
+
+
+/* Defines for Calculate */
+#define Calculate_INST                                                   (TIMA1)
+#define Calculate_INST_IRQHandler                               TIMA1_IRQHandler
+#define Calculate_INST_INT_IRQN                                 (TIMA1_INT_IRQn)
+#define Calculate_INST_LOAD_VALUE                                       (63999U)
+
+
+
+
+/* Port definition for Pin Group KEYB */
+#define KEYB_PORT                                                        (GPIOB)
+
+/* Defines for KEY3: GPIOB.24 with pinCMx 52 on package pin 23 */
+#define KEYB_KEY3_PIN                                           (DL_GPIO_PIN_24)
+#define KEYB_KEY3_IOMUX                                          (IOMUX_PINCM52)
 /* Port definition for Pin Group Direction */
 #define Direction_PORT                                                   (GPIOB)
 
-/* Defines for AIN1: GPIOB.2 with pinCMx 15 on package pin 50 */
-#define Direction_AIN1_PIN                                       (DL_GPIO_PIN_2)
-#define Direction_AIN1_IOMUX                                     (IOMUX_PINCM15)
-/* Defines for AIN2: GPIOB.3 with pinCMx 16 on package pin 51 */
-#define Direction_AIN2_PIN                                       (DL_GPIO_PIN_3)
-#define Direction_AIN2_IOMUX                                     (IOMUX_PINCM16)
+/* Defines for AIN1: GPIOB.4 with pinCMx 17 on package pin 52 */
+#define Direction_AIN1_PIN                                       (DL_GPIO_PIN_4)
+#define Direction_AIN1_IOMUX                                     (IOMUX_PINCM17)
+/* Defines for AIN2: GPIOB.5 with pinCMx 18 on package pin 53 */
+#define Direction_AIN2_PIN                                       (DL_GPIO_PIN_5)
+#define Direction_AIN2_IOMUX                                     (IOMUX_PINCM18)
 /* Defines for BIN1: GPIOB.12 with pinCMx 29 on package pin 64 */
 #define Direction_BIN1_PIN                                      (DL_GPIO_PIN_12)
 #define Direction_BIN1_IOMUX                                     (IOMUX_PINCM29)
@@ -143,6 +183,24 @@ extern "C" {
 /* Defines for IN7: GPIOB.19 with pinCMx 45 on package pin 16 */
 #define INPUTB_IN7_PIN                                          (DL_GPIO_PIN_19)
 #define INPUTB_IN7_IOMUX                                         (IOMUX_PINCM45)
+/* Port definition for Pin Group EncoderB */
+#define EncoderB_PORT                                                    (GPIOB)
+
+/* Defines for L: GPIOB.26 with pinCMx 57 on package pin 28 */
+#define EncoderB_L_PIN                                          (DL_GPIO_PIN_26)
+#define EncoderB_L_IOMUX                                         (IOMUX_PINCM57)
+/* Defines for R: GPIOB.9 with pinCMx 26 on package pin 61 */
+#define EncoderB_R_PIN                                           (DL_GPIO_PIN_9)
+#define EncoderB_R_IOMUX                                         (IOMUX_PINCM26)
+/* Port definition for Pin Group KEYA */
+#define KEYA_PORT                                                        (GPIOA)
+
+/* Defines for KEY2: GPIOA.24 with pinCMx 54 on package pin 25 */
+#define KEYA_KEY2_PIN                                           (DL_GPIO_PIN_24)
+#define KEYA_KEY2_IOMUX                                          (IOMUX_PINCM54)
+/* Defines for KEY4: GPIOA.22 with pinCMx 47 on package pin 18 */
+#define KEYA_KEY4_PIN                                           (DL_GPIO_PIN_22)
+#define KEYA_KEY4_IOMUX                                          (IOMUX_PINCM47)
 
 /* clang-format on */
 
@@ -151,6 +209,9 @@ void SYSCFG_DL_initPower(void);
 void SYSCFG_DL_GPIO_init(void);
 void SYSCFG_DL_SYSCTL_init(void);
 void SYSCFG_DL_PWM_MOTOR_init(void);
+void SYSCFG_DL_EncoderRA_init(void);
+void SYSCFG_DL_EncoderLA_init(void);
+void SYSCFG_DL_Calculate_init(void);
 
 
 bool SYSCFG_DL_saveConfiguration(void);

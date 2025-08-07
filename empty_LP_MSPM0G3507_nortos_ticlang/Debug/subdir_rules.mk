@@ -8,14 +8,14 @@ SHELL = cmd.exe
 %.o: ../%.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: Arm Compiler'
-	"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User" -I"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/Debug" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/third_party/CMSIS/Core/Include" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)"  $(GEN_OPTS__FLAG) -o"$@" "$<"
+	"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User" -I"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/Debug" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/third_party/CMSIS/Core/Include" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)"  $(GEN_OPTS__FLAG) -o"$@" "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 build-1548898625: ../empty.syscfg
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: SysConfig'
-	"E:/TIcup/IDE/CCS/ccs/utils/sysconfig_1.24.0/sysconfig_cli.bat" --script "C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/empty.syscfg" -o "." -s "E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/.metadata/product.json" -s "E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/.metadata/product.json" --compiler ticlang
+	"E:/TIcup/IDE/CCS/ccs/utils/sysconfig_1.24.0/sysconfig_cli.bat" --script "C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/empty.syscfg" -o "." -s "E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/.metadata/product.json" -s "E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/.metadata/product.json" --compiler ticlang
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
@@ -29,14 +29,14 @@ Event.dot: build-1548898625
 %.o: ./%.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: Arm Compiler'
-	"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User" -I"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/Debug" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/third_party/CMSIS/Core/Include" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)"  $(GEN_OPTS__FLAG) -o"$@" "$<"
+	"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User" -I"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/Debug" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/third_party/CMSIS/Core/Include" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)"  $(GEN_OPTS__FLAG) -o"$@" "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
 startup_mspm0g350x_ticlang.o: E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/ti/devices/msp/m0p/startup_system_files/ticlang/startup_mspm0g350x_ticlang.c $(GEN_OPTS) | $(GEN_FILES) $(GEN_MISC_FILES)
 	@echo 'Building file: "$<"'
 	@echo 'Invoking: Arm Compiler'
-	"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User" -I"C:/Users/20829/workspace_ccstheia/empty_LP_MSPM0G3507_nortos_ticlang/Debug" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/third_party/CMSIS/Core/Include" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)"  $(GEN_OPTS__FLAG) -o"$@" "$<"
+	"E:/TIcup/IDE/CCS/ccs/tools/compiler/ti-cgt-armllvm_4.0.3.LTS/bin/tiarmclang.exe" -c @"device.opt"  -march=thumbv6m -mcpu=cortex-m0plus -mfloat-abi=soft -mlittle-endian -mthumb -O2 -I"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang" -I"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/targetConfigs/User" -I"C:/Users/20829/2025-ticup_-car/empty_LP_MSPM0G3507_nortos_ticlang/Debug" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source/third_party/CMSIS/Core/Include" -I"E:/TIcup/IDE/CCS/mspm0_sdk_2_05_01_00/source" -gdwarf-3 -MMD -MP -MF"$(basename $(<F)).d_raw" -MT"$(@)"  $(GEN_OPTS__FLAG) -o"$@" "$<"
 	@echo 'Finished building: "$<"'
 	@echo ' '
 
