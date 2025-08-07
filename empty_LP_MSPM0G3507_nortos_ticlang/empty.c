@@ -14,8 +14,15 @@ int main(void)
     while (1)
     {
         /*Infinite Loop*/
-        Key_Read();//只读取一次
+        if(flag)
+        {
+            Key_Read();//只读取一次
+            flag = 0;
+        }
         Track_Read();//读取循迹
-        Track_Task();//循迹
+        if(cycles)
+        {
+            Track_Task();//循迹
+        }
     }
 }
